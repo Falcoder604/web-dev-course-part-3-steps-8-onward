@@ -1,0 +1,25 @@
+{
+  "name": "web-dev-part-3",
+  "version": "1.0.0",
+  "description": "To make it easy for you to get started with GitLab, here's a list of recommended next steps.",
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.utu.fi/tmtien/web-dev-part-3.git"
+  },
+  "license": "ISC",
+  "author": "Teemu Tienhaara",
+  "type": "commonjs",
+  "main": "index3-9.js",
+  "scripts": {
+    "start": "node index3-9.js",
+    "dev": "node --watch index3-9.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "mongodb": "^7.1.1",
+    "mongoose": "^9.3.3",
+    "morgan": "^1.10.1"
+  }
+}
