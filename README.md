@@ -5,3 +5,5 @@ Osoite, jonka tarvitset Renderissä hostattuun sivustoon: https://web-dev-course
 
 This repository stores some of the exercices I've solved for a course in "fullstack" web-development, hosted by University of Turku. 
 To use this web-service hosted by Render, use this link (provided by Render): https://web-dev-course-part3-render.onrender.com.
+
+NO could database solution integration (yet...?). Maybe some time, when there comes a good one. 
