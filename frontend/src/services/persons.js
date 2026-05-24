@@ -1,6 +1,6 @@
 import axios from 'axios'
 // For Ex. 2.13
-const baseUrl = 'http://localhost:3001/api/persons'
+const baseUrl = '/api/persons'
 
 
 const getAll = () => {

@@ -26,10 +26,14 @@ let persons = [
     }
 ]
 
-// Morgan käytössä, jotta saadaan logeja suorituksen ajaksi terminaaliin
+// Tässä sovelluksen käyttämät middlewaret. Morgan käytössä, jotta saadaan logeja suorituksen ajaksi terminaaliin. Expressin static käytössä, jotta staattisia
+// tiedostoja (tässä tapauksessa distin html-muotoinen index.html voidaan hakea). Ilman static --> Express katsoo, että HTTP GET-pyyntö ei onnistu, koska 
+// kyseessä on staattinen tiedosto mutta väärä hakumenetelmä. 
 app.use(express.json())
 app.use(morgan('tiny'))
 app.use(cors())
+app.use(express.static('dist'))
+
 
 app.get('/', (request, response) => {
   response.send('<h1>Hello World!</h1>')
