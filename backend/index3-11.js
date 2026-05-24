@@ -1,7 +1,9 @@
 const express = require('express')
 const app = express()
 const morgan = require('morgan')
-const cors = require('cors')
+
+// Arvioijalle: tämä index.js-tiedosto sisältää ratkaisut tehtäviin 3.9., 3.10., sekä 3.10.1. niiden päällekkäisyyksien vuoksi. 
+// For the reviewer: this index.js-file includes the solutions to ex.'s 3.9., 3.10., and 3.10.1. due to their interconnective nature. 
 
 let persons = [
     { 
@@ -31,7 +33,6 @@ let persons = [
 // kyseessä on staattinen tiedosto mutta väärä hakumenetelmä. 
 app.use(express.json())
 app.use(morgan('tiny'))
-app.use(cors())
 app.use(express.static('dist'))
 
 
@@ -85,7 +86,7 @@ const generateId = () => {
 }
 
 
-// TÄMÄ VERSIOINTITIEDOSTO SISÄLTÄÄ MOLEMMAT TEHTÄVÄT 3.5. JA 3.6.!!!
+// Tämä sisältää tehtävät 3.5. JA 3.6.!
 app.post('/api/persons', (request, response) => {
   const body = request.body
   

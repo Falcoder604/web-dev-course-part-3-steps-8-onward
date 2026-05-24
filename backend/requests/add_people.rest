@@ -1,7 +1,7 @@
-POST http://localhost:3001/api/persons
+POST https://web-dev-course-part3-render.onrender.com/api/persons
 Content-Type: application/json
 
 {
-    "name": "Tietoteekkari Terry",
+    "name": "Tietoteekkari Terryt",
     "number": "6934698347"
 }

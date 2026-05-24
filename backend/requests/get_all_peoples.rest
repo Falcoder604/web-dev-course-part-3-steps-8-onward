@@ -1,1 +1,1 @@
-GET http://localhost:3001/api/persons
+GET https://web-dev-course-part3-render.onrender.com/api/persons
