@@ -26,6 +26,7 @@ let persons = [
     }
 ]
 
+// Morgan käytössä, jotta saadaan logeja suorituksen ajaksi terminaaliin
 app.use(express.json())
 app.use(morgan('tiny'))
 app.use(cors())
@@ -51,7 +52,7 @@ app.get('/info', (request, response) => {
     })
 
 
-
+// App.get hakee objektit (tässä henkilöt), ja palauttaa jsonina. Jos haettu objekti ei ole person-tyyppiä (ml. null), palauttaa virheen 404. 
 app.get('/api/persons/:id', (request, response) => {
   const id = request.params.id
   const person = persons.find((person) => person.id === id)

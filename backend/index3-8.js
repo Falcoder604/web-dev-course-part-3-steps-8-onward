@@ -80,7 +80,6 @@ const generateId = () => {
 }
 
 
-// TÄMÄ VERSIOINTITIEDOSTO SISÄLTÄÄ MOLEMMAT TEHTÄVÄT 3.5. JA 3.6.!!!
 app.post('/api/persons', (request, response) => {
   const body = request.body
   
